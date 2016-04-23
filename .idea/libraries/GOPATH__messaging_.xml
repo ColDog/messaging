@@ -12,6 +12,7 @@
       <root url="file://$PROJECT_DIR$/../../go-redis/redis/.git" />
       <root url="file://$PROJECT_DIR$/../../pebbe/zmq4/.git" />
       <root url="file://$PROJECT_DIR$/../kdb/.idea" />
+      <root url="file://$PROJECT_DIR$/.git" />
       <root url="file://$PROJECT_DIR$/../../../gopkg.in/bsm/ratelimit.v1/.git" />
       <root url="file://$PROJECT_DIR$/../../lib/pq/.git" />
       <root url="file://$PROJECT_DIR$/../proxy/.git" />

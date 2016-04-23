@@ -1,7 +1,7 @@
 # Messaging Service for Golang
 
 A simple messaging service built on top of zeromq. Implements pub/sub and request/reply with a
-very simple an intuitive api.
+very simple an intuitive api. Must have libzmq installed.
 
 
 Simple RPC Example
@@ -14,7 +14,7 @@ package main
 import "github.com/coldog/messaging"
 
 func main() {
-    messaging.Send('tcp://localhost:3000', messaging.NewMessage("hello"))
+    messaging.Send("tcp://localhost:3000", messaging.NewMessage("hello"))
 }
 
 ```
@@ -26,7 +26,7 @@ package main
 import "github.com/coldog/messaging"
 
 func main() {
-    messaging.Serve('tcp://localhost:3000')
+    messaging.Serve("tcp://localhost:3000")
     messaging.Handle("hello", func(msg messaging.Message) messaging.Message {
         return messaging.NewMessage("received")
     })
